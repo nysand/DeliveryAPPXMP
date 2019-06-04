@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1677">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" hint="Write your name"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="408" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Enter your password">
+                                <rect key="frame" x="16" y="391" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="409" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Write your email">
+                                <rect key="frame" x="16" y="353" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="410" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="447" width="343" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.58823529411764708" blue="1" alpha="1"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="2323" destination="2075" kind="show" identifier="loginSegue"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="411" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="302" y="485" width="57" height="30"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <segue id="1377" destination="472" kind="show" identifier="registerSegue"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="412" firstItem="408" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="413" firstItem="408" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="414" firstItem="408" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY"/>
+                            <constraint id="416" firstItem="408" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="417" firstItem="408" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="418" firstItem="408" firstAttribute="top" secondItem="409" secondAttribute="bottom" constant="8"/>
+                            <constraint id="419" firstItem="410" firstAttribute="top" secondItem="408" secondAttribute="bottom" constant="26"/>
+                            <constraint id="420" firstItem="409" firstAttribute="width" secondItem="408" secondAttribute="width"/>
+                            <constraint id="421" firstItem="409" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="422" firstItem="409" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="423" firstItem="409" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="424" firstItem="409" firstAttribute="width" secondItem="408" secondAttribute="width"/>
+                            <constraint id="425" firstItem="410" firstAttribute="width" secondItem="408" secondAttribute="width"/>
+                            <constraint id="426" firstItem="410" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="427" firstItem="410" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="428" firstItem="410" firstAttribute="leading" secondItem="408" secondAttribute="leading"/>
+                            <constraint id="429" firstItem="410" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="432" firstItem="410" firstAttribute="bottom" secondItem="408" secondAttribute="bottom" constant="56"/>
+                            <constraint id="460" firstItem="411" firstAttribute="top" secondItem="410" secondAttribute="bottom" constant="8"/>
+                            <constraint id="461" firstItem="411" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="8bC-Xf-vdC" id="name-outlet-8bC-Xf-vdC"/>
+                        <outlet property="emailTextField" destination="409" id="name-outlet-409"/>
+                        <outlet property="passwordTextField" destination="408" id="name-outlet-408"/>
+                        <outlet property="signinButton" destination="410" id="name-outlet-410"/>
+                        <outlet property="registerButton" destination="411" id="name-outlet-411"/>
+                    </connections>
+                    <navigationItem title="Log in" id="1740" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="471">
+            <objects>
+                <viewController id="472" sceneMemberID="viewController" customClass="RegisterViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="469"/>
+                        <viewControllerLayoutGuide type="bottom" id="470"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="473">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="476" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Confirm Password">
+                                <rect key="frame" x="16" y="391" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="481" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password">
+                                <rect key="frame" x="16" y="353" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="482" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email address">
+                                <rect key="frame" x="16" y="315" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="489" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="429" width="343" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.58823529411764708" blue="1" alpha="1"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="477" firstItem="476" firstAttribute="centerX" secondItem="473" secondAttribute="centerX"/>
+                            <constraint id="478" firstItem="476" firstAttribute="centerY" secondItem="473" secondAttribute="centerY"/>
+                            <constraint id="479" firstItem="476" firstAttribute="trailing" secondItem="473" secondAttribute="trailingMargin"/>
+                            <constraint id="480" firstItem="476" firstAttribute="leading" secondItem="473" secondAttribute="leadingMargin"/>
+                            <constraint id="483" firstItem="476" firstAttribute="top" secondItem="481" secondAttribute="bottom" constant="8"/>
+                            <constraint id="484" firstItem="481" firstAttribute="top" secondItem="482" secondAttribute="bottom" constant="8"/>
+                            <constraint id="485" firstItem="482" firstAttribute="leading" secondItem="473" secondAttribute="leadingMargin"/>
+                            <constraint id="486" firstItem="481" firstAttribute="leading" secondItem="473" secondAttribute="leadingMargin"/>
+                            <constraint id="487" firstItem="481" firstAttribute="trailing" secondItem="473" secondAttribute="trailingMargin"/>
+                            <constraint id="488" firstItem="482" firstAttribute="trailing" secondItem="473" secondAttribute="trailingMargin"/>
+                            <constraint id="490" firstItem="489" firstAttribute="top" secondItem="476" secondAttribute="bottom" constant="8"/>
+                            <constraint id="491" firstItem="489" firstAttribute="leading" secondItem="473" secondAttribute="leadingMargin"/>
+                            <constraint id="492" firstItem="489" firstAttribute="trailing" secondItem="473" secondAttribute="trailingMargin"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="482" id="name-outlet-482"/>
+                        <outlet property="passwordTextField" destination="481" id="name-outlet-481"/>
+                        <outlet property="confirmPasswordTextField" destination="476" id="name-outlet-476"/>
+                        <outlet property="registerButton" destination="489" id="name-outlet-489"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="474" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="1"/>
+        </scene>
+        <scene sceneID="1676">
+            <objects>
+                <navigationController id="1677" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1679">
+                        <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="1741" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1680" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433" y="7"/>
+        </scene>
+        <scene sceneID="2074">
+            <objects>
+                <tabBarController id="2075" sceneMemberID="viewController" customClass="MainTabBarController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="2078">
+                        <rect key="frame" x="0.0" y="762" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue id="2726" destination="2620" kind="relationship" relationship="viewControllers"/>
+                        <segue id="2819" destination="2733" kind="relationship" relationship="viewControllers"/>
+                        <segue id="2909" destination="2837" kind="relationship" relationship="viewControllers"/>
+                    </connections>
+                    <navigationItem id="3980" key="navigationItem">
+                        <barButtonItem key="rightBarButtonItem" id="3981" systemItem="add">
+                            <connections>
+                                <segue id="4098" destination="3976" kind="show"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2079" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896" y="-158"/>
+        </scene>
+        <scene sceneID="2619">
+            <objects>
+                <tableViewController id="2620" sceneMemberID="viewController" customClass="DeliveriesViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2621">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="center" selectionStyle="default" indentationWidth="10" id="2624" rowHeight="87" reuseIdentifier="deliveryCell" customClass="deliveryTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2624" id="2625">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10820" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                            <rect key="frame" x="16" y="8" width="130" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" id="10822" translatesAutoresizingMaskIntoConstraints="NO" adjustsFontSizeToFit="NO" misplaced="YES">
+                                            <rect key="frame" x="179" y="18" width="168" height="51"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" colorSpace="calibratedRGB" red="0" green="0.58823529411764708" blue="1" alpha="1"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint id="10828" firstItem="10822" firstAttribute="top" secondItem="2625" secondAttribute="top" constant="20"/>
+                                        <constraint id="29253" firstItem="10820" firstAttribute="top" secondItem="2625" secondAttribute="top" constant="8"/>
+                                        <constraint id="29254" firstItem="10820" firstAttribute="leading" secondItem="2625" secondAttribute="leading" constant="16"/>
+                                        <constraint id="29264" firstAttribute="trailing" secondItem="10822" secondAttribute="trailing" constant="16"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="10820" id="name-outlet-10820"/>
+                                    <outlet property="coordinatesLabel" destination="10822" id="name-outlet-10822"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2620" id="2622"/>
+                            <outlet property="delegate" destination="2620" id="2623"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Places" id="2725" image="icons8-map-filled-33.png"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2626" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="-710"/>
+        </scene>
+        <scene sceneID="2732">
+            <objects>
+                <tableViewController id="2733" sceneMemberID="viewController" customClass="DeliveredViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2734">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="2733" id="2735"/>
+                            <outlet property="delegate" destination="2733" id="2736"/>
+                        </connections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4486" rowHeight="70" reuseIdentifier="deliveredCell" customClass="deliveredTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4486" id="4487">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10835" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="16" y="8" width="130" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10836" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="16" y="37" width="130" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10837" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                            <rect key="frame" x="229" y="24" width="130" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" colorSpace="calibratedRGB" red="0" green="0.58823529411764708" blue="1" alpha="1"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint id="10847" firstAttribute="trailing" secondItem="10837" secondAttribute="trailing" constant="16"/>
+                                        <constraint id="10848" firstItem="10837" firstAttribute="top" secondItem="4487" secondAttribute="top" constant="24"/>
+                                        <constraint id="10849" firstAttribute="bottom" secondItem="10837" secondAttribute="bottom" constant="24"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="10835" id="name-outlet-10835"/>
+                                    <outlet property="statusLabel" destination="10836" id="name-outlet-10836"/>
+                                    <outlet property="coordinatesLabel" destination="10837" id="name-outlet-10837"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Delivered" id="2818" image="delivered.png"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2739" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="-11"/>
+        </scene>
+        <scene sceneID="2836">
+            <objects>
+                <viewController id="2837" sceneMemberID="viewController" customClass="ProfileViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2834"/>
+                        <viewControllerLayoutGuide type="bottom" id="2835"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2838">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="17093" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Place Name">
+                                <rect key="frame" x="16" y="77" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="17094" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="115" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" id="18937" translatesAutoresizingMaskIntoConstraints="NO" showsUserLocation="YES">
+                                <rect key="frame" x="32" y="144" width="312" height="161"/>
+                                <constraints>
+                                    <constraint id="26618" firstAttribute="width" constant="312"/>
+                                    <constraint id="26619" firstAttribute="height" constant="161"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="24553" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="118" y="391" width="140" height="30"/>
+                                <state key="normal" title="Share The Place!"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="17867" firstItem="17093" firstAttribute="top" secondItem="2834" secondAttribute="bottom" constant="7"/>
+                            <constraint id="17868" firstItem="17093" firstAttribute="leading" secondItem="2838" secondAttribute="leadingMargin"/>
+                            <constraint id="17869" firstItem="17093" firstAttribute="trailing" secondItem="2838" secondAttribute="trailingMargin"/>
+                            <constraint id="17870" firstItem="17094" firstAttribute="top" secondItem="17093" secondAttribute="bottom" constant="8"/>
+                            <constraint id="17871" firstItem="17094" firstAttribute="leading" secondItem="2838" secondAttribute="leadingMargin"/>
+                            <constraint id="17872" firstItem="17094" firstAttribute="trailing" secondItem="2838" secondAttribute="trailingMargin"/>
+                            <constraint id="18003" firstItem="17094" firstAttribute="top" secondItem="17093" secondAttribute="bottom" constant="8"/>
+                            <constraint id="20628" firstItem="17094" firstAttribute="top" secondItem="17093" secondAttribute="bottom" constant="8"/>
+                            <constraint id="20629" firstItem="17094" firstAttribute="leading" secondItem="2838" secondAttribute="leadingMargin"/>
+                            <constraint id="20630" firstItem="17094" firstAttribute="trailing" secondItem="2838" secondAttribute="trailingMargin"/>
+                            <constraint id="20631" firstItem="17093" firstAttribute="top" secondItem="2834" secondAttribute="bottom" constant="7"/>
+                            <constraint id="20632" firstItem="17093" firstAttribute="leading" secondItem="2838" secondAttribute="leadingMargin"/>
+                            <constraint id="20633" firstItem="17093" firstAttribute="trailing" secondItem="2838" secondAttribute="trailingMargin"/>
+                            <constraint id="20634" firstItem="17094" firstAttribute="top" secondItem="17093" secondAttribute="bottom" constant="8"/>
+                            <constraint id="25846" firstItem="24553" firstAttribute="centerY" secondItem="2838" secondAttribute="centerY"/>
+                            <constraint id="25847" firstItem="24553" firstAttribute="centerX" secondItem="2838" secondAttribute="centerX"/>
+                            <constraint id="26616" firstItem="2838" firstAttribute="trailing" secondItem="18937" secondAttribute="trailing" constant="31"/>
+                            <constraint id="28440" firstItem="18937" firstAttribute="top" secondItem="17094" secondAttribute="bottom" constant="8"/>
+                        </constraints>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="locationTextField" destination="17093" id="name-outlet-17093"/>
+                        <outlet property="originMapViewIcon" destination="18937" id="name-outlet-18937"/>
+                        <outlet property="saveButton" destination="24553" id="name-outlet-24553"/>
+                    </connections>
+                    <navigationItem id="20163" key="navigationItem"/>
+                    <tabBarItem key="tabBarItem" id="26126" title="Share Place" image="icons8-external-link-filled-33.png"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2839" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325" y="660"/>
+        </scene>
+        <scene sceneID="3975">
+            <objects>
+                <viewController id="3976" sceneMemberID="viewController" customClass="NewDeliveryViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3973"/>
+                        <viewControllerLayoutGuide type="bottom" id="3974"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3977">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4155" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Package name">
+                                <rect key="frame" x="16" y="76" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the origin location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="11226" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="115" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="11227" translatesAutoresizingMaskIntoConstraints="NO" showsUserLocation="YES">
+                                <rect key="frame" x="16" y="143.5" width="343" height="244.5"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the destination location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="11228" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="396" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="12952" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="16" y="424" width="343" height="128"/>
+                            </mapView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4156" firstItem="4155" firstAttribute="centerX" secondItem="3977" secondAttribute="centerX"/>
+                            <constraint id="4157" firstItem="4155" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="4158" firstItem="4155" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="4159" firstItem="4155" firstAttribute="top" secondItem="3973" secondAttribute="bottom" constant="6"/>
+                            <constraint id="11232" firstItem="11226" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="11233" firstItem="11226" firstAttribute="leading" secondItem="4155" secondAttribute="leading"/>
+                            <constraint id="11255" firstItem="11226" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="11256" firstItem="11226" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="11264" firstItem="11226" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="11265" firstItem="11226" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="11269" firstItem="11228" firstAttribute="centerY" secondItem="3977" secondAttribute="centerY"/>
+                            <constraint id="11270" firstItem="11228" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="11271" firstItem="11228" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="11285" firstItem="11226" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="11290" firstItem="11228" firstAttribute="centerX" secondItem="3977" secondAttribute="centerX"/>
+                            <constraint id="11291" firstItem="11228" firstAttribute="centerY" secondItem="3977" secondAttribute="centerY"/>
+                            <constraint id="11293" firstItem="11228" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="11294" firstItem="11228" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="11311" firstItem="11228" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="11312" firstItem="11228" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="11319" firstItem="11226" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="11320" firstItem="11226" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="11326" firstItem="11228" firstAttribute="centerY" secondItem="3977" secondAttribute="centerY"/>
+                            <constraint id="11327" firstItem="11228" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="11328" firstItem="11228" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="12535" firstItem="11226" firstAttribute="top" secondItem="4155" secondAttribute="bottom" constant="9"/>
+                            <constraint id="12536" firstItem="11226" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="12537" firstItem="11226" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="12538" firstItem="11227" firstAttribute="top" secondItem="11226" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12539" firstItem="11227" firstAttribute="top" secondItem="11226" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12540" firstItem="11227" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="12541" firstItem="11227" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="12542" firstItem="11228" firstAttribute="centerX" secondItem="3977" secondAttribute="centerX"/>
+                            <constraint id="12543" firstItem="11228" firstAttribute="centerY" secondItem="3977" secondAttribute="centerY"/>
+                            <constraint id="12544" firstItem="11228" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="12545" firstItem="11228" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="12546" firstItem="11228" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="12547" firstItem="11228" firstAttribute="top" secondItem="11227" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12953" firstItem="12952" firstAttribute="top" secondItem="11228" secondAttribute="bottom" constant="8"/>
+                            <constraint id="12954" firstItem="12952" firstAttribute="leading" secondItem="3977" secondAttribute="leadingMargin"/>
+                            <constraint id="12955" firstItem="12952" firstAttribute="trailing" secondItem="3977" secondAttribute="trailingMargin"/>
+                            <constraint id="12956" firstItem="12952" firstAttribute="height" secondItem="11227" secondAttribute="height"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="New Delivery" id="4100" key="navigationItem">
+                        <barButtonItem key="rightBarButtonItem" id="4101" systemItem="save">
+                            <connections>
+                                <action selector="SaveBarButtonItem_Activated:" destination="3976" id="18012"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="packageNameTextField" destination="4155" id="name-outlet-4155"/>
+                        <outlet property="saveBarButtonItem" destination="4101" id="name-outlet-4101"/>
+                        <outlet property="originMapView" destination="11227" id="name-outlet-11227"/>
+                        <outlet property="destinationMapView" destination="12952" id="name-outlet-12952"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3978" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delivered.png" width="30" height="30"/>
+        <image name="icons8-map-filled-33.png" width="33" height="33"/>
+        <image name="icons8-external-link-filled-33.png" width="33" height="33"/>
+    </resources>
+</document>
